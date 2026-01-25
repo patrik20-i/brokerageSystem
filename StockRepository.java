@@ -10,10 +10,9 @@ public class StockRepository {
 
     public static synchronized StockRepository getInstance(){
         if(instance == null){
-            return new StockRepository();
+            instance = new StockRepository();
         }
-        else
-            return instance;
+        return instance;
     }
 
     //function to add stocks to stockRepo
