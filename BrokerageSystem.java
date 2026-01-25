@@ -2,7 +2,7 @@
 class BrokerageSystem {
     private static BrokerageSystem instance;
     private UserRepository userRepo;
-    
+
     private BrokerageSystem() {
         userRepo = UserRepository.getInstance();
         StockRepository.getInstance();
@@ -29,7 +29,6 @@ class BrokerageSystem {
     }
     
     public void sellStock(int userId, String stockID, int quantity) throws InvalidOrderException {
-        // Similar implementation for sell
         User user = userRepo.getUserById(userId);
         Account account = userRepo.getAccountForUser(userId);
 
