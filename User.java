@@ -1,12 +1,12 @@
 public class User{
     int id;
     String name;
-    Portfolio portfolio;
+    Account account;
     
-    public User(int id, String name, Portfolio portfolio){
+    public User(int id, String name, Account portfolio){
         this.id = id;
         this.name = name;
-        this.portfolio = portfolio;
+        this.account = portfolio;
     }
     public int getId() {
         return id;
@@ -24,11 +24,11 @@ public class User{
         this.name = name;
     }
 
-    public Portfolio getPortfolio() {
-        return portfolio;
+    public Account getaccount() {
+        return account;
     }
 
-    public void setPortfolio(Portfolio portfolio) {
-        this.portfolio = portfolio;
+    public void setaccount(Account portfolio) {
+        this.account = portfolio;
     }
 }
